@@ -44,7 +44,7 @@ const styles2 = StyleSheet.create({
     backgroundColor: 'white',
     borderColor: 'black',
     borderWidth: 3,
-    padding: 5,
+    padding: 3,
     margin: 10,
   },
   title2: {
