@@ -6,9 +6,16 @@ import {
   Image,
   ScrollView,
   TouchableOpacity,
+  Linking,
 } from 'react-native';
 
 const CV = () => {
+  const openLink = url => {
+    Linking.openURL(url).catch(err =>
+      console.error('Failed to open link:', err),
+    );
+  };
+
   return (
     <ScrollView style={styles.container}>
       {/* Header */}
@@ -64,10 +71,18 @@ const CV = () => {
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Find Me On</Text>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={[styles.button, styles.instagramButton]}>
+          <TouchableOpacity
+            style={[styles.button, styles.instagramButton]}
+            onPress={() =>
+              openLink(
+                'https://www.instagram.com/aprilliamononutu_/profilecard/?igsh=cG1xd3hsZDZsNWRw',
+              )
+            }>
             <Text style={styles.buttonText}>Instagram</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={[styles.button, styles.githubButton]}>
+          <TouchableOpacity
+            style={[styles.button, styles.githubButton]}
+            onPress={() => openLink('https://github.com/piyaya06')}>
             <Text style={styles.buttonText}>GitHub</Text>
           </TouchableOpacity>
         </View>
