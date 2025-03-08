@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 //2. Buat component
 //   component adalah function yg return jsx
+
 const App = () => {
   return (
     //jsx
