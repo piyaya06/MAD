@@ -21,21 +21,22 @@ const styles = StyleSheet.create({
     padding: 15,
     marginBottom: 15,
     backgroundColor: '#fff',
-    borderRadius: 10,
+    borderRadius: 30,
     borderWidth: 1,
     borderColor: '#a9a9a9',
   },
   avatar: {
-    width: 60,
-    height: 60,
-    borderRadius: 30,
+    width: 100,
+    height: 100,
+    borderRadius: 20,
     marginRight: 15,
+    borderColor: '#ddd',
   },
   userInfo: {
     justifyContent: 'center',
   },
   name: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'normal',
     color: '#000',
   },
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   email: {
-    fontSize: 14,
+    fontSize: 17,
     color: '#000',
   },
 });
