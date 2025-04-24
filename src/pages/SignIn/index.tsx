@@ -1,9 +1,7 @@
+import React, {useEffect} from 'react';
 import {StyleSheet, View} from 'react-native';
-import React from 'react';
-import Header from '../../components/molecules/Header';
-import TextInput from '../../components/molecules/TextInput';
-import Button from '../../components/atoms/Button';
-import Gap from '../../components/atoms/Gap';
+import {Button, Gap} from '../../components/atoms/';
+import {Header, TextInput} from '../../components/molecules/';
 
 const SignIn = ({navigation}) => {
   return (

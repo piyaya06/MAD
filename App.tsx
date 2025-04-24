@@ -1,10 +1,11 @@
 import React from 'react';
 import SplashScreen from './src/pages/SplashScreen';
-import SignIn from './src/pages/SignIn';
 import SignUp from './src/pages/SignUp';
+import SignIn from './src/pages/SignIn';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import FlashMessage from 'react-native-flash-message';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +29,7 @@ const App = () => {
           options={{headerShown: false}}
         />
       </Stack.Navigator>
+      <FlashMessage position="top" />
     </NavigationContainer>
   );
 };
